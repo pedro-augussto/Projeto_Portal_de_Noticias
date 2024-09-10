@@ -22,7 +22,7 @@
 }
 
 body{
-    font: var(--bg-color);
+    font: var(--text);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
 }
@@ -51,8 +51,15 @@ img{
 }
 
 main {
-    margin-top: 40px;
+    margin-block: 40px;
     gap: 80px;
+
+    grid-template-columns: 2fr 1.5fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
 }
 
 .content-tag{
